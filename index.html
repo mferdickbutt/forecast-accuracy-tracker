@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forecast accuracy tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Forecast accuracy tracker</h1>
+        <p class="lede">
+          Monthly forecast vs actual, scored with MAPE, WAPE, and signed bias.
+          Sample demand figures — replace <code>data/forecast.json</code> with your own series.
+        </p>
+      </header>
+
+      <p id="status" class="status">Loading forecast data…</p>
+
+      <section class="cards" aria-label="Summary metrics">
+        <article class="card">
+          <span class="label">MAPE</span>
+          <span id="mape" class="value">—</span>
+        </article>
+        <article class="card">
+          <span class="label">WAPE</span>
+          <span id="wape" class="value">—</span>
+        </article>
+        <article class="card">
+          <span class="label">Signed bias</span>
+          <span id="bias" class="value">—</span>
+        </article>
+        <article class="card">
+          <span class="label">Months</span>
+          <span id="n-months" class="value">—</span>
+        </article>
+      </section>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Forecast</th>
+              <th>Actual</th>
+              <th>Error (F−A)</th>
+              <th>APE</th>
+              <th>Signed %</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+
+      <footer>
+        Positive error / bias means the forecast was high. Formulas are in
+        <a href="./README.md">README.md</a>.
+      </footer>
+    </div>
+
+    <script src="./js/accuracy.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
