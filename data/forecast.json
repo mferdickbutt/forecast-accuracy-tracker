@@ -1,0 +1,20 @@
+[
+  { "month": "2024-04", "forecast": 820, "actual": 790 },
+  { "month": "2024-05", "forecast": 860, "actual": 910 },
+  { "month": "2024-06", "forecast": 940, "actual": 905 },
+  { "month": "2024-07", "forecast": 1010, "actual": 1085 },
+  { "month": "2024-08", "forecast": 1120, "actual": 1090 },
+  { "month": "2024-09", "forecast": 980, "actual": 940 },
+  { "month": "2024-10", "forecast": 1050, "actual": 1110 },
+  { "month": "2024-11", "forecast": 1280, "actual": 1340 },
+  { "month": "2024-12", "forecast": 1520, "actual": 1475 },
+  { "month": "2025-01", "forecast": 890, "actual": 845 },
+  { "month": "2025-02", "forecast": 920, "actual": 975 },
+  { "month": "2025-03", "forecast": 990, "actual": 960 },
+  { "month": "2025-04", "forecast": 1030, "actual": 1075 },
+  { "month": "2025-05", "forecast": 1100, "actual": 1060 },
+  { "month": "2025-06", "forecast": 1180, "actual": 1245 },
+  { "month": "2025-07", "forecast": 1250, "actual": 1210 },
+  { "month": "2025-08", "forecast": 1300, "actual": 1360 },
+  { "month": "2025-09", "forecast": 1220, "actual": 1185 }
+]
